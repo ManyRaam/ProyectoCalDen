@@ -1,0 +1,5 @@
+html {
+  background: -webkit-radial-gradient(center ellipse, #FF2E63 0%, #08D9D6 100%);
+  background: radial-gradient(ellipse at center, #FF2E63 0%, #08D9D6 100%);
+  overflow: hidden;
+}

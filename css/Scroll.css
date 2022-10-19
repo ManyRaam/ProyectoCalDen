@@ -1,0 +1,41 @@
+* {font-family:arial; margin:0; padding:0;}
+
+.menus {
+	
+    z-index: 2;
+ background:none; 
+ color:#ffffff; 
+ height: initial;
+ line-height:65px;
+ font-size: 1em;
+ letter-spacing:1px;
+ width:100%;
+ position: none;
+  text-align: center;
+ 
+ }
+ 
+ 
+ .menus  a:active{
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  
+   background-color: gray;
+  -webkit-transition: all .1s ease-out;
+  
+}
+
+.menus a:hover {
+  text-decoration: underline;
+}
+
+ 
+.active {
+  background: white;
+}
+
+
+
+
+

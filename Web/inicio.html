@@ -1,0 +1,136 @@
+
+
+
+
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Inicio</title>
+		<noscript>
+  <meta http-equiv="refresh" content="0;url=nohayjava.jsp">
+</noscript>
+		
+		<link rel="shortcut icon" href="img/ipn.jpg" type="image/png" />
+		<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
+                <link rel="stylesheet" type="text/css" href="css/set2.css" />
+			<link rel="stylesheet" type="text/css" href="css/letras.css" />
+              <!--  <link rel="stylesheet" type="text/css" href="css/main.css" /> -->
+		
+		
+        </head>
+        
+        <body><div class="container">
+			<header class="H">
+                            
+				
+				<div class="hero">
+					<div class="hero__imgwrap">
+					  
+						<img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }' src="img/1.jpg" alt="Hero image" />
+					</div>
+                                    <h1>  
+                                        <div class="grid__item color-3">
+                                            <a class="link N" style=" " href="javascript:delay('8908.jsp')">ODONT<span style="font-size: 1em;">O</span>LOGIA</a>
+			</div>  
+                                       
+                                        <br>
+                                        <form name="index" method="post" action="verificarusuario" onsubmit="return e()" >					 <span class="input input--nao">
+					<input class="input__field input__field--nao" type="text" id="usuario" name="usuario" onkeypress="return e2(event)"  required/>
+					<label class="input__label input__label--nao" for="usuario">
+						<span class="input__label-content input__label-content--nao">Usuario</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+				</span>
+				<span class="input input--nao">
+					<input  class="input__field input__field--nao" type="password" id="password" name="password" onkeypress="return e2(event)" width="20" required />
+					<label  class="input__label input__label--nao" for="password">
+						<span class="input__label-content input__label-content--nao">Contrase&ntilde;a</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+                                        </span>
+                                        <br>
+                                             <div class="box bg-1">
+                                                
+                                                   	  <input type="submit" class="button button--moema button--inverted button--text-thick button--size-s" style="height: none; padding: 0em 0em;" value="Entrar">
+				<!-- 
+                                                  <a href="menu.jsp">
+												  <button class="button button--winona button--border-thin button--round-s" data-text="Iniciar" ><span>Iniciar</span></button>
+													</a>   -->
+                                <script>
+                                    function delay (URL) {
+    setTimeout( function() { window.location = URL }, 10000 );
+}
+                                    function e(){
+                                      var a =   document.index.usuario.value;
+                                      var b = document.index.password.value;
+                                      if(a.length === 0 || b.length=== 0){
+                                          return false;
+                                          
+                                      }
+                                       else{
+                                           return true;
+                                       } 
+                                        
+                                        
+                                        
+                                    }
+                                  function e2(event){
+            var cual = event.which;
+            
+               if((cual>=48 && cual<=57)||(cual>=97 && cual<=122)||(cual>=65 && cual<=90)|| cual===8 || cual === 0){
+                return true;
+            }
+            else{
+            
+                return false;
+            }
+         
+            
+    
+        }
+                                    
+                                   
+                                    
+                                    
+                                             </script>
+												
+												
+                               
+					
+					
+					
+				
+				</div></form>
+                                 
+                                       
+           <a href="loginnuevo.jsp" ><input type="submit" class="button button--moema button--inverted button--text-thick button--size-s" style="height: none; padding: 0em 0em;left: 65%;height: 35;" value="Alumnos"></a>
+          <br>     <a href="regisdentista.jsp"><input type="submit" class="button button--moema button--inverted button--text-thick button--size-s" style="height: none; padding: 0em 0em; left: 65%;height: 35;" value="Registrarse"></a>
+                
+				</h1>
+                                     
+				</div>
+                         
+                           
+                            
+			</header>
+		
+			
+            
+			
+		
+          </div>
+		<script src="js/TweenMax.min.js"></script>
+		
+	
+		<script src="js/tiltfx.js"></script>
+              <script src="js/Letras.js"></script>
+	</body>
+</html>
+

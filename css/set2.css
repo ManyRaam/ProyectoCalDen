@@ -1,0 +1,316 @@
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	//margin:-0.70em;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #aaa;
+	font-weight: 400;
+	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	width: 40%;
+	color: #696969;
+	font-weight: bold;
+	font-size: 70.25%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
+}
+
+.graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+.icon {
+	color: #ddd;
+	font-size: 150%;
+}
+
+
+
+/* Nao */
+.input--nao {
+	overflow: hidden;
+	padding-top: 1em;
+}
+
+.input__field--nao {
+	padding: 1em 0em 0.25em;
+	width: 100%;
+	background: transparent;
+	color: #FFFFFF;
+	font-size: .7em;
+}
+
+.input__label--nao {
+	position: absolute;
+	top: 1.5em;
+	font-size: 1em;
+	left: 0;
+	display: block;
+	width: 100%;
+	text-align: right;
+	padding: 0em;
+	pointer-events: none;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transition: -webkit-transform 0.2s 0.15s, color 1s;
+	transition: transform 0.2s 0.15s, color 1s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.graphic--nao {
+	stroke: #FFFFFF;
+	pointer-events: none;
+	-webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
+	transition: transform 0.7s, stroke 0.7s;
+	-webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+} 
+
+.input__field--nao:focus + .input__label--nao,
+.input--filled .input__label--nao {
+	color: #00ffaa;
+	-webkit-transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
+	transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
+}
+
+.input__field--nao:focus ~ .graphic--nao,
+.input--filled .graphic--nao {
+	stroke: #00ffaa;
+	-webkit-transform: translate3d(-66.6%, 0, 0);
+	transform: translate3d(-66.6%, 0, 0);
+}
+
+
+.select{ 
+padding: 0.25em 0.5em;
+	margin-top: 1.25em;
+	
+	background: #494e57;
+	color: #a1a3a4;
+	border:none;
+border-radius: 2px;
+}
+
+.select:active{
+	border:none;
+	background: #FFFFFF;
+}
+
+.select:hover{
+	border:none;
+	background: #FFFFFF;
+}
+
+
+
+.checkbox{
+	
+		width: 100%;
+}
+
+label{
+	font-family: arial;
+	   
+    
+   
+   
+   
+    overflow: hidden;
+    padding: 0 0.25em;
+	    display: inline-block;
+    
+    padding: 0 1em;
+   
+    color: #a1a3a4;
+    font-weight: bold;
+    
+	
+}
+
+
+
+
+
+.button1 {
+                                   border: none;
+                                	font-family: arial;
+                                	
+                                	
+                                	background: none;
+                                	cursor: pointer;
+                                	padding: 20px 64px;
+                                	display: inline-block;
+                                	margin: 0px 0px;
+									font-weight: bold;
+                                	letter-spacing: 1px;
+                                	
+                                	outline: none;
+                                	position: relative;
+                               	-webkit-transition: all 0.3s;
+                                	-moz-transition: all 0.3s;
+                                	transition: all 0.3s;
+                                        border-radius: 2px;
+                                        -webkit-font-smoothing: antialiased;
+										    font-size: 70.25%;
+                                       
+                                }
+                                .button1  {
+                                    background:#494e57;
+                                   color: #a3a4a5;
+                                    box-shadow: 0 6px #d94f5c;
+                                    -webkit-transition: none;
+                                    -moz-transition: none;
+                                    transition: none;
+                                }
+                                
+                                .button1:hover {
+									
+                                	box-shadow: 0 4px #FFFFFF;
+                                	top: 2px;
+                                        cursor:pointer;
+                                }
+                                .button1:active {
+                                box-shadow: 0 0 #d94f5c;
+                                top: 6px;
+                                }
+
+
+
+/* Kozakura */
+.input--kozakura {
+	overflow: hidden;
+	padding-bottom: 1em;
+}
+
+.input__field--kozakura {
+	z-index: 1;
+	padding: 0.25em 0.5em;
+	margin-top: 1.25em;
+	width: 100%;
+	background: transparent;
+	color: #2F3238;
+	font-size: 1.55em;
+	opacity: 0;
+}
+
+.input__label--kozakura {
+	
+	width: 100%;
+	text-align: left;
+	position: absolute;
+	top: 1em;
+	pointer-events: none;
+	overflow: hidden;
+	padding: 0 0.25em;
+	-webkit-transform: translate3d(1em, 2.75em, 0);
+	transform: translate3d(1em, 2.75em, 0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.input__label-content--kozakura {
+	color: #ffffff;
+	padding: 0.4em 0 0.25em;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.input__label-content--kozakura::after {
+	content: attr(data-content);
+	position: absolute;
+	font-weight: 800;
+	top: 100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	padding: 0.25em 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.85em;
+}
+
+.graphic--kozakura {
+	fill: #494E57;
+	pointer-events: none;
+	top: 1em;
+	bottom: 0px;
+	height: 4.5em;
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.7s, fill 0.7s;
+	transition: transform 0.7s, fill 0.7s;
+	-webkit-transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+	transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+} 
+
+.input__field--kozakura:focus,
+.input--filled .input__field--kozakura {
+	-webkit-transition: opacity 0s 0.35s;
+	transition: opacity 0s 0.35s;
+	opacity: 1;
+}
+
+.input__field--kozakura:focus + .input__label--kozakura,
+.input--filled .input__label--kozakura {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.input__field--kozakura:focus + .input__label--kozakura .input__label-content--kozakura,
+.input--filled .input__label-content--kozakura {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+	-webkit-transform: translate3d(0, -100%, 0);
+	transform: translate3d(0, -100%, 0);
+}
+
+.input__field--kozakura:focus ~ .graphic--kozakura,
+.input--filled .graphic--kozakura {
+	fill: #fff;
+	-webkit-transform: translate3d(-66.6%, 0, 0);
+	transform: translate3d(-66.6%, 0, 0);
+}
+

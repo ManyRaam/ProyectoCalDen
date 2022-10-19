@@ -1,0 +1,49 @@
+html {
+  background: -webkit-gradient(linear, left top, right bottom,color-stop(0%,#2D4059), color-stop(100%,#FF5722));
+ background: -moz-linear-gradient(top,#FF304F,#118DF0);
+overflow-x: hidden;
+  
+    background-attachment: fixed;
+
+    padding-top: 0px;
+   background-repeat: no-repeat;
+    
+    
+    
+}
+
+svg{
+     position: absolute;
+   
+       left: 0px;
+    top: 0px;
+    z-index: -1;
+      -webkit-animation: color_change 10s infinite alternate;
+    animation: color_change 10s infinite alternate;
+   
+    
+}
+
+
+                @-webkit-keyframes color_change {
+		  from { background-color: blue; }
+		  to { background-color: red; }
+		}
+		@-moz-keyframes color_change {
+		  from { background-color: blue; }
+		  to { background-color: red; }
+		}
+		@-ms-keyframes color_change {
+		  from { background-color: blue; }
+		  to { background-color: red; }
+		}
+		@-o-keyframes color_change {
+		  from { background-color: blue; }
+		  to { background-color: red; }
+		}
+		@keyframes color_change {
+		  from { background-color: #2D4059; }
+		  to { background-color: #08D9D6,#FF2E63; }
+                 
+		}
+              
